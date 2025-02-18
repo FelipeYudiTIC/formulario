@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulário de Circular</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <script src="/scripts/main.js" defer></script>
+</head>
+<body>
+  <h1>Enviar Informações</h1>
+  <form id="circularForm">
+    <label for="setor">Setor:</label>
+    <select id="setor" name="setor" required>
+      <option value="">Selecione um setor</option>
+      <option value="TI">TI</option>
+      <option value="RH">RH</option>
+      <option value="Financeiro">Financeiro</option>
+      <option value="Administrativo">Administrativo</option>
+    </select><br><br>
+
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" required><br><br>
+
+    <label for="conteudo">Conteúdo:</label><br>
+    <textarea id="conteudo" name="conteudo" rows="4" cols="50" required></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="message" class="message">Dados enviados com sucesso!</div>
+</body>
+</html>
